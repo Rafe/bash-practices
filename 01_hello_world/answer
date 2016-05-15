@@ -1,0 +1,13 @@
+# Add a interpreter directive (shebang)
+# to indicate this is a bash file
+# type "which bash" in command line to find for your bash binary file
+
+#!/usr/bin/env bash
+
+# print out "hello world string"
+
+echo "hello world"
+
+# make this file executable
+
+# chmod +x ./hello_world

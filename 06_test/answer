@@ -1,0 +1,92 @@
+# String test
+
+# 1 write a if condition check string is null
+str=""
+if [[ -z $str ]]
+then
+  echo 'is null!'
+fi
+
+# 2 write a if condition check string is not null
+str2="something"
+if [[ -n $str2 ]]
+then
+  echo 'is not null!'
+fi
+
+# 3 write a if condition check string is equal
+str="hello"
+str2="hello"
+if [[ $str = $str2 ]]
+then
+  echo 'is equal!'
+fi
+
+# File test
+
+#1 check file exist
+
+if [[ -e /bin/bash ]]
+then
+  echo "file exist!"
+fi
+
+#2 check is file or directory
+if [[ -d /usr ]]
+then
+  echo "is directory!"
+fi
+
+if [[ -f /bin/bash ]]
+then
+  echo "is file!"
+fi
+
+# Integer test
+
+#1 write if statement with greater than operator
+
+a=2
+b=1
+# if [[ $a -gt $b ]]
+if (( $a > $b ))
+then
+  echo "$a is greater than ${b}!"
+fi
+
+#2 write if statement with equal operator
+
+a=2
+b=2
+# if [[ $a == $b ]]
+if (( $a == $b ))
+then
+  echo "$a is equal to ${b}!"
+fi
+
+# Other Test
+
+#1 write if statement with logical and 
+a=0
+b=0
+# if [ $a == 0 -a $b == 0 ]
+if [[ $a == 0 && $b == 0 ]]
+then
+  echo "a and b is equal to 0"
+fi
+
+#2 write if statement with logical or
+a=1
+b=0
+# if [ $a == 0 -o $b == 0 ]
+if [[ $a == 0 || $b == 0 ]]
+then
+  echo "a or b is equal to 0"
+fi
+
+#3 write if statement with logical not
+a=1
+if [[ ! $a == 0 ]]
+then
+  echo "a is not equal to 0"
+fi

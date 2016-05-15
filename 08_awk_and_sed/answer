@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+#1 use sed to replace j in file.txt to k
+
+sed 's/t/d/g' file.txt
+
+#2 use awk to print all names
+
+awk '{ print $1 } ' file.txt | tr -d ','

@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# 1. create variable string "hello"
+
+# 2. use variable from 1 and print "hello world"
+
+# 3. use variable from 1 and print "helloworld"
+
+# 4. create array ["world", "hello"] and print hello world
+
+# 5. then print array "world hello"
+
+# 6. print the length of variable hello
+
+# 7. set variable fb=foobar, echo foo by substract bar
+
+# 8. echo environment variable BASH_VERSION
+
+# 9. create environment variable HELLO_STRING with value hello
+
+# 10. export variable
+
+# BOUNS: print out your PS1, PS2, PS3

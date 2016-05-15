@@ -1,0 +1,9 @@
+>>>>>>>
+
+local/test/branch
+
+foo/bar
+
+bash/is/very/good
+
+>>>>>>>

@@ -1,0 +1,12 @@
+# HEAD_KEYWORD <expression>
+# BODY_BEGIN
+#   BODY_COMMANDS
+# BODY_END
+
+#1 create a if-else block
+
+#2 create a for loop echo 1 to 10
+
+#3 create a while loop
+
+#4 create a case statement take 1,2,3 and print different message

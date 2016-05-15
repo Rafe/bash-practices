@@ -1,0 +1,40 @@
+# 1 create a function foobar, print first parameter passed in
+
+foobar() {
+  echo $1
+}
+
+foobar {1..10}
+
+# 2 print all params in foobar
+
+foobar() {
+  echo $@
+}
+foobar {1..10}
+
+# 3 print number of params in foobar
+
+foobar() {
+  echo $#
+}
+foobar {1..10}
+
+# 4 print function name in foobar
+
+foobar() {
+  echo $FUNCNAME
+}
+foobar {1..10}
+
+# 5 return 0 in function foobar, print out return code
+
+foobar() {
+  return 0
+}
+foobar {1..10}
+echo $?
+
+# 6 print out foobar function
+
+type foobar

@@ -1,0 +1,46 @@
+# HEAD_KEYWORD <expression>
+# BODY_BEGIN
+#   BODY_COMMANDS
+# BODY_END
+
+#1 create a if-else block
+
+if 0
+then
+  echo 'hello'
+else
+  echo 'world'
+fi
+
+#2 create a for loop echo 1 to 10
+
+for i in {1..10}
+do
+  echo $i
+done
+
+#3 create a while loop
+
+i=0
+while [[ $i -lt 4 ]]
+do
+  echo $i && i=$[$i + 1]
+done
+
+#4 create a case statement
+
+option=1
+case $option in
+  1)
+    echo 'option is 1'
+    ;;
+  2)
+    echo 'option is 2'
+    ;;
+  3)
+    echo 'option is 3'
+    ;;
+  *)
+    echo 'option is unknown'
+    ;;
+esac

@@ -1,0 +1,41 @@
+# cut
+
+#1 seperate text by delimiter , get name from file
+
+cat file.txt | cut -d , -f 1
+
+# grep
+
+#2 grep jimmy line from file
+
+cat file.txt | grep jimmy
+
+# sort
+
+#3 sort the file by alphabet order
+
+cat file.txt | sort
+
+# wc
+
+#4 count how many line in file.txt
+
+cat file.txt | wc -l
+
+# uniq
+
+#5 output duplicated line from file.txt
+
+uniq -d file.txt
+
+# tr
+
+#6 replace , to . in file.txt
+
+cat file.txt | tr ',' '.'
+
+# join
+
+#7 combine file.txt and file2.txt data by name
+
+join file.txt file2.txt

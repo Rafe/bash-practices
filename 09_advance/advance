@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# 1 print the tag name from tag.txt, ignore the path
+
+cat tag.txt | egrep '[a-z/]+' | rev | cut -d '/' -f 1 | rev
+
+# 2 print all files in this repo with shebang (#!/usr/bin/env bash)
+
+find . -type f | xargs egrep -l "/usr/bin/env"
+
+# 3 rank the git commit message in this repo and sort them by length order
+
+
