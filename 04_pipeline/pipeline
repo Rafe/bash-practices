@@ -1,27 +1,13 @@
 # 1 redirect stdout to file
 
-echo 'test' > test.txt
-
 # 2 redirect stderr to file
-
-not_exist_command 2> error.txt
 
 # 3 append stdout to file
 
-echo 'test' >> test.txt
-
 # 4 redirect output to wc (wordcount)
-
-echo 'test' | wc
 
 # 5 supress stderr
 
-not_exist_command 2> /dev/null
-
 # 6 redirect stderr to stdout, redirect stdout to file
 
-not_exist_command > error2.txt 2>&1
-
 # 7 echo params to other command by xargs (ls as example)
-
-echo -al ./ | xargs ls

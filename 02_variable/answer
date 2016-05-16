@@ -43,6 +43,4 @@ HELLO_STRING="hello"
 
 export HELLO_STRING
 
-# source ./variable
-
 # BOUNS: print out your PS1, PS2, PS3
